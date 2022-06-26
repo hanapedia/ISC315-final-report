@@ -8,7 +8,7 @@ docker, docker-compose, nvidia-cudaドライバ, nvidia-container-toolkitをイ�
 
 でjupyter labをブラウザ上に起動.
 
-kaggleAPIを使う場合は`.env`ファイルを作成し、
+kaggleAPIを使う場合は`.env`ないで、
 
 ```
 KAGGLE_USERNAME=<your kaggle username>
