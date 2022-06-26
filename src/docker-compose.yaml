@@ -1,0 +1,19 @@
+version: '3'
+services:
+  jupyternb:
+    image: nvidiacuda:latest
+    user: "${GID}:${UID}"
+    ports:
+      - 8888:8888
+    volumes: 
+    - ./src:/home/user/code
+    command: sh -c 'jupyter-lab --allow-root --ip=*'
+    tty: true
+    environment:
+      - KAGGLE_USERNAME
+      - KAGGLE_KEY
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

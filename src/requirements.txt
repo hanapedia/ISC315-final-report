@@ -1,0 +1,10 @@
+jupyter
+jupyterlab
+numpy
+pandas
+matplotlib
+scipy
+torch
+torchvision
+tqdm
+kaggle
